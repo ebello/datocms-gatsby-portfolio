@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 
@@ -10,7 +10,7 @@ const About = ({ data: { about } }) => (
       <h1 className="sheet__title">{about.title}</h1>
       <p className="sheet__lead">{about.subtitle}</p>
       <div className="sheet__gallery">
-        <Img sizes={about.photo.sizes} />
+        <Img fluid={about.photo.fluid} />
       </div>
       <div
         className="sheet__body"
@@ -33,7 +33,7 @@ export const query = graphql`
       title
       subtitle
       photo {
-        sizes(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
+        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
           ...GatsbyDatoCmsSizes
         }
       }
