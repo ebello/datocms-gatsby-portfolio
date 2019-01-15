@@ -1,6 +1,6 @@
 # Gatsby Portfolio Website
 
-This repo contains a working static website written with [Gatsby](https://www.gatsbyjs.org/), integrated with content coming from this [DatoCMS administrative area](https://dashboard.datocms.com/account/sites/template?name=Portfolio&siteId=604).
+This repo contains a working static website written with [Gatsby](https://www.gatsbyjs.org/), integrated with content coming from this [DatoCMS administrative area](https://dashboard.datocms.com/projects/new-from-template/static-website/gatsby-portfolio).
 
 [See the demo](http://cranky-edison-12166d.netlify.com/)
 
